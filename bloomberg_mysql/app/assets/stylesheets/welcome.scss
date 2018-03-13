@@ -1,0 +1,36 @@
+// Place all the styles related to the Welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+	background-image: url(background.jpg);
+}
+
+.all {
+	margin: auto;
+    width: 50%;
+    border: 3px black;
+    padding: 10px;
+    white-space: nowrap;
+    color: white;
+}
+
+#indexTitle {
+	font-size: huge;
+	margin: auto;
+    width: 50%;
+    border: 3px black;
+    padding: 10px;
+    white-space: nowrap;
+    color: #E9967A;
+}
+
+
+img{
+	max-height: 150px;
+	margin: 0;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}

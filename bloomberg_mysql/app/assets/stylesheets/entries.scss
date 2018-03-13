@@ -1,0 +1,43 @@
+// Place all the styles related to the Entries controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+#myTable {
+	margin: auto;
+    width: 50%;
+    border: 10px #ADD8E6;
+    padding: 10px;
+    color: yellow;
+    border-collapse: collapse;
+    background-color: black;
+}
+
+#newEntryLink {
+    text-align: center;
+    display: block;
+    margin: 0px auto;
+    color: #ff3300;
+    font-size: x-large;
+    padding-top: 10px;
+}
+
+#newEntryLink>a {
+    background-color: white;
+    border: black 2px solid;
+    padding:6px;
+}
+
+a:link {
+    color: yellow;
+}
+
+a:visited {
+    color: green;
+}
+
+a:hover {
+    color: hotpink;
+}
+
+a:active {
+    color: blue;
+}

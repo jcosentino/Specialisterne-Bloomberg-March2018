@@ -1,0 +1,28 @@
+<p>
+  <strong>Model:</strong>
+  <%= @entry.model %>
+</p>
+
+<p>
+  <strong>Make:</strong>
+  <%= @entry.make %>
+</p>
+
+<p>
+  <strong>Year:</strong>
+  <%= @entry.year %>
+</p>
+
+<p>
+  <strong>Country:</strong>
+  <%= @entry.country %>
+</p>
+
+<h2 class="commentHeading">Comments</h2>
+<%= render @entry.comments %>
+
+<h2 class="commentHeading">Add a comment:</h2>
+<%= render 'comments/form' %>
+
+<%= link_to 'Edit', edit_entry_path(@entry) %> |
+<%= link_to 'Back', entries_path %>

@@ -1,0 +1,25 @@
+<table class="table table-condensed table-responsive" id="myTable">
+	<tr>
+		<th>Model</th>
+		<th>Make</th>
+		<th>Year</th>
+		<th>Country</th>
+	</tr>
+
+<% @entries.each do |entry| %>
+	<tr>
+		<td><%= entry.model %></td>
+		<td><%= entry.make %></td>
+		<td><%= entry.year %></td>
+		<td><%= entry.country %></td>
+		<td><%= link_to 'Show', entry_path(entry) %></td>
+		<td><%= link_to 'Edit', edit_entry_path(entry) %>
+		<td><%= link_to 'Delete', entry_path(entry),
+              method: :delete,
+              data: { confirm: 'Are you sure?' } %></td>
+<% end %>
+</table>
+
+<div id="newEntryLink">
+<%= link_to 'New Entry', new_entry_path %>
+</div>
